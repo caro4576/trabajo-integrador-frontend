@@ -59,7 +59,7 @@ function mostrarPersonajes(personajes) {
 function mostrarDetalles(personaje) {
   tituloModal.textContent = personaje.name;
   cuerpoModal.innerHTML = `
-    <img src="${personaje.image}" class="img-fluid mb-4" />
+    <img src="${personaje.image}" class="img-fluid mb-3 d-block mx-auto" />
     <p><strong>Estado:</strong> ${traducirEstado(personaje.status)}</p>
     <p><strong>Especie:</strong> ${personaje.species}</p>
     <p><strong>Género:</strong> ${personaje.gender}</p>
