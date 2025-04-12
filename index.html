@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personajes - Rick y Morty</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container my-4">
+    <h1 class="text-center mb-4">Personajes de Rick y Morty</h1>
+<header>
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input id="inputBusqueda" type="text" class="form-control" placeholder="Buscar por nombre..." />
+    </div>
+    <div class="col-md-6">
+      <select id="filtroEstado" class="form-select">
+        <option value="">Todos los estados</option>
+        <option value="alive">Vivo</option>
+        <option value="dead">Muerto</option>
+        <option value="unknown">Desconocido</option>
+      </select>
+    </div>
+  </header>  
+  </div>
+ <div class="row g-3" id="listaPersonajes"></div>
+  <div class="d-flex justify-content-between mt-4">
+      <button id="botonAnterior" class="boton btn-outline-light">Anterior</button>
+      <button id="botonSiguiente" class="boton btn-outline-light">Siguiente</button>
+    </div>
+  </div>
+
+
+  <!-- Modal de detalles -->
+  <div class="modal fade" id="detailModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h3 class="modal-titulo" id="tituloModal"></h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-cuerpo" id="cuerpoModal"></div>
+      </div>
+    </div>
+  </div>
+<footer>
+    <h5>
+     Soporte de la API Rick y Morty
+    </h5>
+    <h6>
+      Ayuda a mantener la infraestructura de The Rick y Morty API.
+      Si estás usando la API para tu app, tus tutoriales en línea o tus desafíos de codificación,
+      por favor considera apoyarnos para ayudar a mantener vivo el proyecto.
+      No estamos recibiendo ningún dinero de esto y utilizamos nuestro tiempo libre para mantener la API en marcha y los datos actualizados.
+      Cada contribución, por grande o pequeña que sea, es súper valiosa para nuestro futuro.
+    </h6>
+    <h6>Gracias</h6>
+</footer>
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
