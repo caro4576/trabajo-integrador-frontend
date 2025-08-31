@@ -8,7 +8,12 @@ body {
     color: #b3ff00;
     /* verde fluor neón */
 }
-
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
 h1 {
     @font-face {
         font-family: 'Get Schwifty';
