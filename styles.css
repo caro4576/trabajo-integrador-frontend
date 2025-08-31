@@ -14,55 +14,7 @@ h1 {
         font-family: 'Get Schwifty';
         src: url('GetSchwifty.ttf') format('truetype');
     }
-
-
-    font-family: 'Get Schwifty',
-    sans-serif;
-    color: #39FF14;
-    text-shadow: 0 0 5px #39FF14,
-    0 0 10px #39FF14,
-    0 0 20px #00FFEA,
-    0 0 40px #00FFEA;
-    /* agregá más efectos si querés */
-
-
-    /* font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 4rem;
-    color: #39FF14;
-    /* Verde fosforescente */
-    /* text-shadow:
-        0 0 5px #39FF14,
-        0 0 10px #39FF14,
-        0 0 20px #00FFEA,
-        0 0 40px #00FFEA;
-    animation: flotar 3s ease-in-out infinite,
-        brillo 2s alternate infinite;
-}
-
-/* Efecto de flotación */
-    /* @keyframes flotar {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-} 
-
-/* Efecto de brillo intermitente */
-    /* @keyframes brillo {
-    100% {
-        text-shadow:
-            0 0 10px #39FF14,
-            0 0 20px #39FF14,
-            0 0 30px #00FFEA,
-            0 0 60px #00FFEA;
-    }
-} */
-
+  
 }
 
 h5,
@@ -74,15 +26,15 @@ h6 {
 }
 
 p {
-    color: #9cff00;
+    color: yellowgreen;
     text-align: center;
     margin-top: 10px;
 
 }
 .busqueda {
-    background-color: #000;
-    border: 1px solid #39FF14;
-    border-radius: 5px;
+    background-color: (linear-gradient(135deg, #0f2027, #203a43, #2c5364));
+    border: 1px solid yellowgreen;
+    border-radius: 8px;
     padding: 10px;
     width: 300px;
     margin: 20px auto;
@@ -90,23 +42,19 @@ p {
 
 .boton {
     background-color: #000;
-    font-family: 'Get Schwifty', sans-serif;
-    color: #39FF14;
-    text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 20px #00FFEA, 0 0 40px #00FFEA;
-    width: 200px;
-    margin: 20px auto;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
+    color: yellowgreen;
+    border: 2px solid yellowgreen;
     border-radius: 5px;
+    padding: 10px 20px;
     font-size: 16px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px yellowgreen;
 
 }
 
 .boton:hover {
-    background-color: #a4ff00;
+    background-color: yellowgreen;
     color: #000;
-    cursor: pointer;
-    box-shadow: 0 0 16px #a4ff00;
+    text-shadow: none;
 }
